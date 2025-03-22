@@ -1,0 +1,27 @@
+BEGIN
+    Prompt user for number of weeks
+    Initialize total_income = 0
+    Initialize total_tax_withheld = 0
+
+    FOR each week from 1 to number of weeks DO
+        Prompt user to enter weekly income
+        IF income < 500 THEN
+            tax_rate = 0.10
+        ELSE IF income >= 500 AND income < 1500 THEN
+            tax_rate = 0.15
+        ELSE IF income >= 1500 AND income < 2500 THEN
+            tax_rate = 0.20
+        ELSE
+            tax_rate = 0.30
+        ENDIF
+
+        tax_withheld = income * tax_rate
+        Add income to total_income
+        Add tax_withheld to total_tax_withheld
+    ENDFOR
+
+    average_tax_withheld = total_tax_withheld / number_of_weeks
+
+    Display total income, total tax withheld, and average tax withheld
+END
+
