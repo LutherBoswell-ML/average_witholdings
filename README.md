@@ -23,10 +23,10 @@ This project calculates the **weekly average tax withholding** for a customer ba
 
 ## 🖥️ Sample Execution
 
-withholding-calculator/
+csc320/mod3
 │
 ├── mod3.py     # Main source code
 ├── screenshots/                  # Screenshots of execution
-│   ├── input_example.png
-│   └── output_summary.png
+│   ├── input terminal.png
+│   └── output terminal.png
 ├── README.md                     # Project documentation
